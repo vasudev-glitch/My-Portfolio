@@ -3,6 +3,9 @@
 :root {
   --primary-white: #fff;
   --primary-orange: #FF4500;
+  --primary-dark:  rgba(255,255,255,0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
 }
 
 body{
@@ -14,10 +17,9 @@ body{
 /************************NAVBAR************************************/
 
 .logo{
- width: 8.25rem;
- margin-right:3rem;
+ width: 10.25rem;
  height: 7rem;
- padding: 0rem;
+ position: center;
  }
 
 /***********Menu-Links*************/
@@ -32,7 +34,9 @@ nav ul li{
 }
 
 .navbar-nav > li > a {
-  font-size: 1rem;
+  font-size: 0.780rem;
+  margin-top:1px;
+  margin-bottom:2px;
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color:var(--primary-white) !important;
@@ -52,3 +56,66 @@ nav ul li{
 .navbar-nav > li > a:hover{
   border-top: 0.1875rem solid var(--primary-orange) !important;
 }
+
+/************************HEADER************************************/
+
+.Header-wraper{
+    Position: "relative";
+    background: url(Background-Image.jpg);
+    background-size: "cover";
+    background-position: "center";
+    background:repeat-x repeat-y;
+    height: 1000vh;
+
+  }
+  
+  .main-info{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    font-family: "Roboto Condesed",san-serif;
+    z-index: 1;
+  }
+
+  .main-info h1{
+    color: var(--primary-orange);
+    align-items: center;
+    margin-top: 200px;
+    text-transform:uppercase;
+  }
+
+  /**************Typed-Text****************/
+
+  .Typed-text{
+    font-size: 2rem;
+    color:var(--primary-white);
+
+  }
+
+  /**********Header-Main-BUTTON************/
+  .btn-main-offer{
+    border: 1px solid var(--primary-red);
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+    margin:2rem;
+    color: var(--primary-dark);
+    
+  }
+  .btn-main-offe:hover{
+    text-decoration: none;
+    background-color: var(--primary-hover-red);
+    color: var(--primary-white);
+    transition: .2s ease-in-out;
+  }
+
+  /*******************PARTICLES*********/
+  .tsparticles-canvas-el {
+    position:Absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+  }
+  
